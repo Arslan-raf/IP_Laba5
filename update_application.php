@@ -15,7 +15,7 @@ $application= mysqli_fetch_assoc($application);
 </head>
 <body>
 
-<h1>Изменение данных Заявке</h1>
+<h1>Изменение данных о Заявке</h1>
 
 <form action="update_application2.php" method="post">
 

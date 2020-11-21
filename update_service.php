@@ -13,7 +13,7 @@ $service= mysqli_fetch_assoc($service);
 </head>
 <body>
 
-<h1>Изменение данных о холодильнике</h1>
+<h1>Изменение данных о сервисном центре</h1>
 
 <form action="update_service2.php" method="post">
 
