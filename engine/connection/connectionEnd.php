@@ -1,0 +1,1 @@
+<?mysqli_close($link);?>
