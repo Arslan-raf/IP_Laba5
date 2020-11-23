@@ -32,6 +32,10 @@ $products= mysqli_query($connect,"SELECT * FROM `fridge`");
 
     echo("<option disabled>Выберите</option>");
      while($row = mysqli_fetch_array($products)){
+        
+if($row[0]==$application['fridge_id']){
+    echo("<option selected> $row[0]-$row[2] </option>");
+}
         echo("<option value='$row[0]'> $row[0] - $row[2]</option>");
      }
   echo "</select>";
@@ -43,6 +47,9 @@ $services= mysqli_query($connect,"SELECT * FROM `service_center`");
    
     echo("<option disabled>Выберите</option>");
      while($row2 = mysqli_fetch_array($services)){
+     	if($row2[0]==$application['center_id']){
+    echo("<option selected> $row2[0]-$row2[1] </option>");
+}
         echo("<option value='$row2[0]'> $row2[0] - $row2[1]</option>");
      }
       echo "</select>";
